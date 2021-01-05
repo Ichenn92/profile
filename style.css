@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Ubuntu:wght@400;700&display=swap');
+
+
+:root {
+  --blue: #3498db;
+  --green: #1abc9c;
+  --dark-grey: #595457;
+  --purple: #9b59b6;
+  --egg: #F6F8FB;
+  --red: #F03A47;
+  --light-green: #2ecc71;
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0
+  padding: 0
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--egg);
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+h1, p {
+  color: var(--dark-grey);
+}
+
+
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+  color: var(--green);
+}
+p {
+  font-size: 16px;
+}
+
+a {
+  color: var(--blue);
+}
+a:hover {
+  color: var(--red);
+}
+
+/* specific style */
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  margin: 32px auto;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+.img-size-avatar {
+  height: 200px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.list-inline {
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.logo li {
+  margin: auto 16px;
+  font-size: 46px;
+}
+
+.logo-red {
+  color: var(--red);
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+
+  .logo li {
+    margin: auto 4px;
+  }
+}
